@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+#square-container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px;
+    border: 2px solid black;
+}
+
+.square{
+    flex: 1 0 6.25%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid rgb(18, 18, 18);
+    box-sizing: border-box;
+}
+.square:hover{
+    background-color: lightblue;
+}
