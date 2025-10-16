@@ -27,6 +27,10 @@ h1{
     background-color: lightblue;
 }
 
+.square.active{
+    background-color: blue;
+}
+
 #popup-container{
     position: fixed;
     top: 0;

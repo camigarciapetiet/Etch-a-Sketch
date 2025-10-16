@@ -5,7 +5,7 @@ function createSquares(father, n){
         square.classList.add("square");
         square.style.flex="1 0 " + percentage +"%";
         father.appendChild(square);
-}
+    }
 }
 
 function changeContainerSize(){
@@ -23,6 +23,11 @@ function submitChange(){
 
 const sContainer= document.querySelector("#square-container");
 createSquares(sContainer, 16); 
+sContainer.addEventListener('click', (e) => {
+    if (e.target.classList.contains('square')) {
+        e.target.classList.toggle('active');
+    }
+});
 
 const popupC =document.querySelector("#popup-container");
 const sizeB =document.querySelector("#size-btn");
