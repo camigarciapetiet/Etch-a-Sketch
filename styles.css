@@ -5,6 +5,8 @@ h1{
 #size-btn{
     background-color: blue;
     color: white;
+    display: block;
+    margin: 20px auto;
 }
 
 #square-container{
